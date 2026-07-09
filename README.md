@@ -59,6 +59,26 @@ The project was designed to accomplish the following objectives:
 - Reduce manual scheduling activities.
 - Improve operational reporting and workforce planning.
 
+# Business Rules & Constraints
+The Workforce planning system was designed around several operational and contractual requirements.
+
+### Operational Rules
+
+- Support a workforce of approximately 350 employees.
+- Enforce a 56-day on / 14-day off rotational schedule.
+- Forecast workforce availability for the entire calendar year.
+- Track staffing coverage by operational shift (A & B).
+- Track staffing coverage by operational position.
+
+### Contractual Constraints
+
+- Maintain minimum staffing thresholds at all times.
+- Maximize billable workforce availability.
+- Prevent staffing levels from falling below contractual requirements.
+- Support advance planning for employee leave rotations.
+- Provide leadership with visibility into future staffing shortages.
+
+
 # My Role 
 
 I independently designed, developed, tested, and implemented the workforce scheduling solution from concept through production use.
@@ -66,7 +86,7 @@ I independently designed, developed, tested, and implemented the workforce sched
 Responsibilities included:
 
 - Designing the overall workforce scheduling architecture.
-- Automating workforce data imports from Smartsheet.
+- Designed the data integration workflow by transforming employee data exported from Smartsheet into a centralized workforce planning platform using Power Query.
 - Developing Power Query transformations.
 - Creating advanced Excel calculations supporting workforce forecasting.
 - Designing scheduling logic for a 56-day on / 14-day off rotation.
@@ -76,27 +96,68 @@ Responsibilities included:
 
 # Solution Overview
 
-...
+The Workforce Planning & Scheduling System was designed to automate the organization's workforce planning process by transforming manually maintained employee information into an operational planning platform capable of forecasting workforce availability throughout the calendar year.
 
----
+The solution imported employee demographic information exported from Smartsheet into Microsoft Excel where Power Query standardized and transformed the data for workforce planning. Automated scheduling logic calculated employee rotations based on a 56-day on / 14-day off staffing model while validating staffing coverage against contractual minimum staffing requirements.
+
+Leadership could forecast employee availability, planned leave rotations, staffing shortages, and organizational coverage months in advance while maintaining required staffing levels necessary to satisfy operational and contractual obligations.
 
 # System Architecture
 
---
-
----
+```text
+Human Resources
+        │
+        ▼
+Employee Data
+(Smartsheet)
+        │
+        ▼
+Export Workforce Data
+        │
+        ▼
+Power Query
+(Data Cleaning & Transformation)
+        │
+        ▼
+Workforce Planning Engine
+(Excel Automation)
+        │
+        ├──────────────┐
+        ▼              ▼
+Annual Forecast     Staffing Validation
+        │              │
+        └──────┬───────┘
+               ▼
+Executive Dashboard
+Operational Reporting
+Leadership Planning
+```
 
 # Technologies Used
 
-...
-
----
+| Technology | Purpose |
+|------------|---------|
+| Microsoft Excel | Workforce planning platform and scheduling engine |
+| Power Query | Automated data import, transformation, and standardization |
+| Advanced Excel Formulas | Workforce forecasting, staffing validation, and scheduling logic |
+| Pivot Tables | Workforce reporting and operational summaries |
+| Conditional Formatting | Staffing alerts and workforce visibility |
+| Smartsheet | Employee demographic data source maintained by Human Resources |
 
 # Key Features
 
-...
-
----
+- Automated workforce scheduling for approximately 350 employees.
+- Forecasted employee work rotations across the entire calendar year.
+- Supported a 56-day on / 14-day off rotational staffing model.
+- Automated workforce data integration from Smartsheet exports.
+- Maintained contractual minimum staffing requirements.
+- Maximized billable workforce availability.
+- Monitored staffing coverage by operational shift.
+- Validated staffing levels by operational position.
+- Forecasted employee leave months in advance.
+- Improved organizational communication regarding upcoming workforce rotations.
+- Produced operational dashboards and executive reporting.
+- Reduced manual scheduling effort through workflow automation.
 
 # Results
 
