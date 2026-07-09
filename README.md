@@ -78,6 +78,38 @@ The Workforce planning system was designed around several operational and contra
 - Provide leadership with visibility into future staffing shortages.
 
 
+# Business Decision Logic
+The workforce planning engine evaluated each scheduling cycle against operational and contractual requirements before the schedule was considered acceptable.
+
+```mermaid
+flowchart TD
+
+A[Import Employee Data]
+
+A --> B[Generate Workforce Rotation]
+
+B --> C[Calculate Annual Forecast]
+
+C --> D[Validate Staffing by Shift]
+
+D --> E[Validate Staffing by Position]
+
+E --> F{Meets Minimum Staffing?}
+
+F -->|No| G[Adjust Schedule]
+
+G --> B
+
+F -->|Yes| H{Meets Contract Billing Threshold?}
+
+H -->|No| G
+
+H -->|Yes| I[Publish Executive Dashboard]
+
+I --> J[Leadership Reviews Forecast]
+
+J --> K[Approve Workforce Plan]
+
 # My Role 
 
 I independently designed, developed, tested, and implemented the workforce scheduling solution from concept through production use.
