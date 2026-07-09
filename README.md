@@ -104,33 +104,23 @@ Leadership could forecast employee availability, planned leave rotations, staffi
 
 # System Architecture
 
-```text
-Human Resources
-        │
-        ▼
-Employee Data
-(Smartsheet)
-        │
-        ▼
-Export Workforce Data
-        │
-        ▼
-Power Query
-(Data Cleaning & Transformation)
-        │
-        ▼
-Workforce Planning Engine
-(Excel Automation)
-        │
-        ├──────────────┐
-        ▼              ▼
-Annual Forecast     Staffing Validation
-        │              │
-        └──────┬───────┘
-               ▼
-Executive Dashboard
-Operational Reporting
-Leadership Planning
+```mermaid
+flowchart TD
+    A[Human Resources]
+    B[Employee Data<br/>Smartsheet]
+    C[Power Query]
+    D[Workforce Planning Engine]
+    E[Annual Forecast]
+    F[Staffing Validation]
+    G[Executive Dashboard]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    D --> F
+    E --> G
+    F --> G
 ```
 
 # Technologies Used
