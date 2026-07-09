@@ -85,30 +85,24 @@ The workforce planning engine evaluated each scheduling cycle against operationa
 flowchart TD
 
 A[Import Employee Data]
-
 A --> B[Generate Workforce Rotation]
-
 B --> C[Calculate Annual Forecast]
-
 C --> D[Validate Staffing by Shift]
-
 D --> E[Validate Staffing by Position]
 
-E --> F{Meets Minimum Staffing?}
+E --> F{Minimum Staffing Met?}
 
 F -->|No| G[Adjust Schedule]
-
 G --> B
 
-F -->|Yes| H{Meets Contract Billing Threshold?}
+F -->|Yes| H{Contract Staffing Threshold Met?}
 
 H -->|No| G
 
-H -->|Yes| I[Publish Executive Dashboard]
-
+H -->|Yes| I[Generate Executive Dashboard]
 I --> J[Leadership Reviews Forecast]
-
 J --> K[Approve Workforce Plan]
+```
 
 # My Role 
 
