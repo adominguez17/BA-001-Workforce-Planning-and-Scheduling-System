@@ -5,6 +5,13 @@
 Designed and implemented an automated workforce scheduling solution that improved operational planning, staffing visibility, and executive reporting for a workforce operating under continuous staffing requirements.
 
 ---
+# Executive Summary
+
+Designed and implemented a workforce planning and scheduling solution supporting a 350-person operational workforce operating under continuous staffing requirements.
+
+The solution automated workforce scheduling by integrating employee data exported from Smartsheet into a centralized Microsoft Excel platform utilizing Power Query, advanced formulas, and automated forecasting. The system projected employee work rotations, generated annual scheduling forecasts, monitored staffing levels, and ensured contractual staffing requirements were consistently maintained.
+
+By automating workforce planning, leadership gained advance visibility into employee rotations, staffing shortages, position coverage, and billing thresholds months in advance, significantly reducing manual scheduling efforts while improving operational planning and decision-making.
 
 # 📊 Project Snapshot
 
@@ -18,14 +25,6 @@ Designed and implemented an automated workforce scheduling solution that improve
 | Status | Production Implementation |
 
 ---
-
-# Executive Summary
-
-Designed and implemented a workforce planning and scheduling solution supporting a 350-person operational workforce operating under continuous staffing requirements.
-
-The solution automated workforce scheduling by integrating employee data exported from Smartsheet into a centralized Microsoft Excel platform utilizing Power Query, advanced formulas, and automated forecasting. The system projected employee work rotations, generated annual scheduling forecasts, monitored staffing levels, and ensured contractual staffing requirements were consistently maintained.
-
-By automating workforce planning, leadership gained advance visibility into employee rotations, staffing shortages, position coverage, and billing thresholds months in advance, significantly reducing manual scheduling efforts while improving operational planning and decision-making.
 
 # Business Context
 
@@ -94,13 +93,44 @@ Responsibilities included:
 - Developing operational dashboards and reporting.
 - Creating planning tools allowing leadership to forecast workforce availability months in advance.
 
-# Solution Overview
+# Solution Workflow
 
-The Workforce Planning & Scheduling System was designed to automate the organization's workforce planning process by transforming manually maintained employee information into an operational planning platform capable of forecasting workforce availability throughout the calendar year.
+```mermaid
+flowchart TD
 
-The solution imported employee demographic information exported from Smartsheet into Microsoft Excel where Power Query standardized and transformed the data for workforce planning. Automated scheduling logic calculated employee rotations based on a 56-day on / 14-day off staffing model while validating staffing coverage against contractual minimum staffing requirements.
+A[HR Maintains Employee Records<br/>Smartsheet]
 
-Leadership could forecast employee availability, planned leave rotations, staffing shortages, and organizational coverage months in advance while maintaining required staffing levels necessary to satisfy operational and contractual obligations.
+B[Export Employee Data]
+
+C[Power Query<br/>Data Cleaning & Transformation]
+
+D[Automated Workforce Planning Engine]
+
+A --> B
+B --> C
+C --> D
+
+D --> E[Annual Workforce Forecast]
+
+D --> F[56-Day On<br/>14-Day Off Rotation]
+
+D --> G[Position Staffing Validation]
+
+D --> H[Shift A/B Coverage]
+
+D --> I[Contract Staffing Threshold]
+
+E --> J[Executive Dashboard]
+F --> J
+G --> J
+H --> J
+I --> J
+
+J --> K[Leadership Planning]
+
+K --> L[Operational Scheduling Decisions]
+```
+
 
 # System Architecture
 
