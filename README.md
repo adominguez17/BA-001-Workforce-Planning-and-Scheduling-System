@@ -45,6 +45,8 @@ This manual process created several operational challenges:
 - Leadership lacked centralized reporting for workforce planning.
 - Billing thresholds depended upon maintaining minimum active staffing levels at all times.
 
+---
+
 # Project Objectives
 
 The project was designed to accomplish the following objectives:
@@ -61,6 +63,8 @@ The project was designed to accomplish the following objectives:
 # Business Rules & Constraints
 The Workforce planning system was designed around several operational and contractual requirements.
 
+---
+
 ### Operational Rules
 
 - Support a workforce of approximately 350 employees.
@@ -68,6 +72,8 @@ The Workforce planning system was designed around several operational and contra
 - Forecast workforce availability for the entire calendar year.
 - Track staffing coverage by operational shift (A & B).
 - Track staffing coverage by operational position.
+
+---
 
 ### Contractual Constraints
 
@@ -77,6 +83,7 @@ The Workforce planning system was designed around several operational and contra
 - Support advance planning for employee leave rotations.
 - Provide leadership with visibility into future staffing shortages.
 
+---
 
 # Business Decision Logic
 The workforce planning engine evaluated each scheduling cycle against operational and contractual requirements before the schedule was considered acceptable.
@@ -103,6 +110,7 @@ H -->|Yes| I[Executive Dashboard]
 I --> J[Leadership Reviews]
 J --> K[Approve Workforce Plan]
 ```
+---
 
 # My Role 
 
@@ -118,6 +126,8 @@ Responsibilities included:
 - Building staffing validation tools to maintain contractual staffing requirements.
 - Developing operational dashboards and reporting.
 - Creating planning tools allowing leadership to forecast workforce availability months in advance.
+
+---
 
 # Solution Workflow
 
@@ -156,7 +166,7 @@ J --> K[Leadership Planning]
 
 K --> L[Operational Scheduling Decisions]
 ```
-
+---
 
 # System Architecture
 
@@ -178,6 +188,7 @@ flowchart TD
     E --> G
     F --> G
 ```
+---
 
 # Technologies Used
 
@@ -189,6 +200,8 @@ flowchart TD
 | Pivot Tables | Workforce reporting and operational summaries |
 | Conditional Formatting | Staffing alerts and workforce visibility |
 | Smartsheet | Employee demographic data source maintained by Human Resources |
+
+---
 
 # Key Features
 
@@ -226,6 +239,8 @@ The Workforce Planning & Scheduling System transformed a manual workforce planni
 - Standardized workforce planning into a repeatable, data-driven process.
 - Reduced scheduling errors by applying automated business rules.
 - Centralized workforce planning and reporting into a single operational solution.
+
+---
 
 ### Leadership Value
 
