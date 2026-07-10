@@ -255,7 +255,7 @@ The Workforce Planning & Scheduling System transformed a manual workforce planni
 The following screenshots demonstrate the production version of the Workforce Planning & Scheduling System.
 
 ## Executive Dashboard
-*Displays workforce availability, staffing summaries, executive KPIs, and operational metrics.*
+
 
 <img width="903" height="887" alt="image" src="https://github.com/user-attachments/assets/0e773a18-a0f1-4f49-8442-eb9e57a9de56" />
 
@@ -269,33 +269,33 @@ The following screenshots demonstrate the production version of the Workforce Pl
 *Annual employee rotation schedule supporting the 56-day on / 14-day off staffing model.*
 ## This table served as the master date dimension for the scheduling engine.
 It generated one row for every date in the planning year and calculated:
--Date
--Year
--Month
--Month Name
--Week #
--Week Start (Monday of each week)
--Day Number (1–7)
--Day Name
--Key (used for relationships/merges)
--The purpose wasn't just to make a calendar—it was to give the scheduling engine a consistent date table that every employee's rotation could be compared against.
+- Date
+- Year
+- Month
+- Month Name
+- Week #
+- Week Start (Monday of each week)
+- Day Number (1–7)
+- Day Name
+- Key (used for relationships/merges)
+- The purpose wasn't just to make a calendar—it was to give the scheduling engine a consistent date table that every employee's rotation could be compared against.
 
 ## The scheduling engine used three main inputs:
 
 ## Employee Master Roster
--Employee
--Shift (Alpha / Bravo)
--Position
--Group
--Cycle Start Date (or stagger value)
+- Employee
+- Shift (Alpha / Bravo)
+- Position
+- Group
+- Cycle Start Date (or stagger value)
 
 ## Calendar Table
--Every day of the year.
+- Every day of the year.
 
 ## Business Rule
--56 days ON
--14 days OFF
--Total cycle = 70 days
+- 56 days ON
+- 14 days OFF
+- Total cycle = 70 days
 
 For every employee and every date in the calendar, the workbook determined where that employee was in the 70-day cycle.
 <img width="1666" height="861" alt="image" src="https://github.com/user-attachments/assets/9cab25dd-fc33-43a7-a395-0411a3e57900" />
