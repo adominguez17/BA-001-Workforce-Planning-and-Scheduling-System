@@ -313,8 +313,19 @@ For every employee and every date in the calendar, the workbook determined where
 
 ## Power Query Workflow
 *Automated import and transformation of workforce data exported from Smartsheet.*
+## The workforce planning engine begins by importing employee roster information from Smartsheet exports into Power Query.
 
-*(Screenshot coming soon)*
+## Power Query was used to:
+
+- Import workforce roster data
+- Normalize employee records
+- Merge employee calendars with approved time off
+- Generate a full annual calendar table
+- Create scheduling status fields
+- Produce a clean data model for downstream automation
+## The resulting dataset became the foundation for all scheduling calculations and executive reporting
+
+<img width="1918" height="837" alt="image" src="https://github.com/user-attachments/assets/1200b223-bc99-4eb4-8af5-cd7479dcad14" />
 
 ---
 
