@@ -252,16 +252,80 @@ The Workforce Planning & Scheduling System transformed a manual workforce planni
 
 # Screenshots
 
-(Images will go here later.)
+The following screenshots demonstrate the production version of the Workforce Planning & Scheduling System.
+
+## Executive Dashboard
+*Displays workforce availability, staffing summaries, executive KPIs, and operational metrics.*
+
+*(Screenshot coming soon)*
+
+---
+
+## Annual Workforce Calendar
+*Annual employee rotation schedule supporting the 56-day on / 14-day off staffing model.*
+
+*(Screenshot coming soon)*
+
+---
+
+## Staffing Validation Dashboard
+*Validates staffing levels by position and operational shift while ensuring contractual staffing requirements are maintained.*
+
+*(Screenshot coming soon)*
+
+---
+
+## Workforce Planning Engine
+*Core scheduling workbook responsible for annual forecasting, workforce rotations, staffing validation, and executive reporting.*
+
+*(Screenshot coming soon)*
+
+---
+
+## Power Query Workflow
+*Automated import and transformation of workforce data exported from Smartsheet.*
+
+*(Screenshot coming soon)*
 
 ---
 
 # Lessons Learned
 
-...
+Developing this solution reinforced several key Business Analysis principles.
 
+- Clearly defined business requirements simplify solution design.
+- Automating repetitive operational processes significantly improves efficiency and consistency.
+- Reliable forecasting depends on accurate and standardized source data.
+- Building flexibility into the solution allows operational requirements to evolve over time.
+- Dashboards should provide decision support rather than simply display information.
+- Early stakeholder collaboration increases user adoption and reduces implementation challenges.
+- Well-designed automation improves both operational performance and leadership visibility.
 ---
 
 # Future Enhancements
 
-...
+Future versions of this solution could include:
+
+- Integration directly with enterprise HR systems to eliminate manual exports.
+- Migration from Excel to a SQL-backed database for improved scalability.
+- Interactive Power BI dashboards with real-time staffing metrics.
+- Automated notifications for upcoming employee rotations and leave schedules.
+- Predictive staffing models using historical workforce trends.
+- Scenario planning tools allowing leadership to model staffing changes before implementation.
+- Web-based reporting portal for executives and operational managers.
+
+---
+## Portfolio Information
+
+**Project ID:** BA-001
+
+**Portfolio Series:** Business Analytics Portfolio
+
+**Author:** Aaron Dominguez
+
+**Status:** Production Solution
+
+**Repository Version:** 1.0
+---
+
+*All business information, screenshots, and datasets have been sanitized to remove confidential or proprietary information while preserving the technical design and business value of the solution.*
